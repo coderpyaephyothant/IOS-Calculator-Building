@@ -1,0 +1,53 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator Application</title>
+    <style>
+        .key{
+            padding: 20px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="calculator">
+        <h1 class="displayBox"></h1>
+        <div class="keypad" >
+        </div>
+    </div>
+    <script>
+        const keypadTag = document.querySelector(".keypad");
+        const operators = ["+","-","*","/","="];
+        const displayBoxTag = document.querySelector(".displayBox");
+        for (let i=0; i<10; i++) {
+            keypadTag.innerHTML+= `<button class="key" onClick="showInDisplay('${i}')">${i}</button>`
+        }
+        const myFunction = (x)=>{
+            if (x === "="){
+                keypadTag.innerHTML+= `<button class="key" onClick="clalculationFunction()">${x}</button>`; // take care "" outer for ${x}
+            }else {
+                keypadTag.innerHTML+= `<button class="key" onClick="showInDisplay('${x}')">${x}</button>`; // take care "" outer for ${x}
+            }
+            
+        }
+        operators.forEach (myFunction);
+        const showInDisplay = (v)=>{
+            displayBoxTag.innerText += v;
+        }
+
+        const clalculationFunction = () => {
+            const calculatedValue = eval(displayBoxTag.innerText);
+            console.log(calculatedValue);
+            displayBoxTag.innerText = calculatedValue;
+        } -->
+
+        
+       
+        
+      
+    </script>
+</body>
+</html>

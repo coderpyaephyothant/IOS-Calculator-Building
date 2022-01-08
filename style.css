@@ -1,0 +1,70 @@
+*{
+    padding: 0;
+    margin : 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    margin: 100px auto;
+    width:390px ;
+    font-family: 'Roboto', sans-serif;
+}
+
+.display{
+color: white;
+font-size: 70px;
+text-align: right;
+line-height: 110px;
+cursor: pointer;
+user-select: none;
+padding: 0px 20px 0px 0px;
+height: 110px;
+background-color: rgb(14, 100, 92);
+}
+
+.keypad {
+
+}
+
+.key{
+    width: 90px;
+    height: 90px;
+    border: 1px solid black;
+    line-height: 90px; /* it must equal to height; it for vertical, text align is inly for horizontal..*/
+    text-align: center;
+    border-radius: 50%;
+    user-select: none;
+    cursor: pointer;
+    font-size: 30px;
+    margin: 5px;
+    background-color: #333333; 
+    color: white;
+}
+
+.key:active {
+    background-color: #33333390;
+}
+
+.zero{
+    width: 190px;
+    border-radius: 90px;
+}
+
+tr:first-child td .key {
+    background-color: #a5a5a5;
+    color: black;
+   
+}
+tr:first-child td .key:active {
+    background-color: #a5a5a590;
+}
+
+tr td:last-child .key {
+    background-color: #ffa45c;
+    color: white;
+}
+tr td:last-child .key:active {
+    background-color: #ffa45c90;
+    
+}
